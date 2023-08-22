@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Handjet&family=Vina+Sans&display=swap');
+
+* {
+    font-family: 'Black Ops One', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 150%;
+    background-image: url(../images/fotokubrooo.jpg);
+    background-size: cover;
+}
+
+.items {
+    background-color: pink;
+    padding:  1rem 10rem;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.items:hover {
+    background-color: hotpink;
+    transform: translateY(-5px);
+}
+
+.items a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .items {
+        padding: 1rem 3rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
